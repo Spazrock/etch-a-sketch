@@ -16,3 +16,9 @@ function genDivs(v){
 
 	genDivs(16)
 	
+	const cells = document.querySelectorAll('.cell');
+	  cells.forEach((div) => {
+		  div.addEventListener('mouseenter', (e) => {
+	      e.target.style.background = 'black';
+	      });
+	  });
