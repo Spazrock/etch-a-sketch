@@ -1,0 +1,11 @@
+.cell {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  margin: .05em;
+  border: solid;
+}
+
+.cell:hover{
+	background-color: black;
+}
