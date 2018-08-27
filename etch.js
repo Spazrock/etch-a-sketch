@@ -4,7 +4,7 @@ input = 16
 grid = Math.pow(input,2);
 
 function genDivs(grid){  
-        for(i = 1; i < grid; i++){ 
+        for(i = 0; i < grid; i++){ 
             var cell = document.createElement("div"); 
 			cell.classList.add('cell')
 			cell.style.width = (100/input)+"%"; //<-- doesn't seem to work
@@ -15,7 +15,8 @@ function genDivs(grid){
 			}
 		} 
 
-	genDivs(grid)	  
+	genDivs(grid)
+
 	 
 	  clearGrid = document.getElementById('1');
 	  clearGrid.addEventListener('click', function() {
