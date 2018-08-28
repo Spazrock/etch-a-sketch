@@ -11,6 +11,8 @@ function genDivs(grid){
 			cell.style.height = (100/input)+"%"; //<-- box-sizing: border-box
   		 	cell.addEventListener('mouseenter', (e) => {
   	      		e.target.style.background = 'black';});
+	  		cell.addEventListener('touchStart', (e) => {
+	  	      	e.target.style.background = 'black';});
             container.appendChild(cell); 
 			}
 		} 
