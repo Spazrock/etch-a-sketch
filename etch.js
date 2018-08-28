@@ -22,7 +22,7 @@ function genDivs(grid){
 	  clearGrid.addEventListener('click', function() {
 	    container.innerHTML = '';
 	    input = prompt('Enter a number between 1 and 40');
-		if (input>40) {alert("Your number must be between 1 and 40"); input=40}
+		if (input>40) {alert("Your number must be between 1 and 40"); input=16}
 		grid = Math.pow(input,2);
 	    genDivs(grid);
 	  });
